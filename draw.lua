@@ -8,6 +8,7 @@ local brightness = {
 }
 
 
+
 local sw, sh = 0, 0
 
 local screen = {}
@@ -18,6 +19,17 @@ end
 
 draw = {
 	brightness = brightness,
+	colors = {
+		black = "\27[30m",
+		red = "\27[31m",
+		green = "\27[32m",
+		yellow = "\27[33m",
+		blue = "\27[34m",
+		magenta = "\27[35m",
+		cyan = "\27[36m",
+		white = "\27[37m",
+		reset = "\27[0m"
+	},
 	sleep = function(a)
 		local sec = tonumber(os.clock() + a);
 		while (os.clock() < sec) do
