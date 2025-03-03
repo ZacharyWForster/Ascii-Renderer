@@ -12,17 +12,7 @@ local draw = require("draw")
 
 draw.init(sw, sh)
 
-colors = {
-	black = "\27[30m",
-	red = "\27[31m",
-	green = "\27[32m",
-	yellow = "\27[33m",
-	blue = "\27[34m",
-	magenta = "\27[35m",
-	cyan = "\27[36m",
-	white = "\27[37m",
-	reset = "\27[0m"
-}
+colors = draw.colors
 
 
 draw.drawline(1, 1, 10, 10, 1, colors.red)
